@@ -12,6 +12,8 @@ function renderMemes(memes) {
         return;
     }
     memesGrid.innerHTML = memes.map((meme) => createCardHTML(meme)).join("");
+    document.getElementById('memesCount').textContent = "Всего: "
++ memes.length;
 }
 
 function createCardHTML(meme) {
